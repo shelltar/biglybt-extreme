@@ -27,7 +27,7 @@ patch_java_runtime()
 
 # Install Extreme Mod
 cd /opt/biglybt
-unzip -o /app/BiglyBT_3.5.0.0_20231112.zip
+unzip -o /app/BiglyBT_3.7.0.0_20241024.zip
 
 # Adjust JavaVM runtime @ ${HOME}/.biglybt/java.vmoptions
 patch_java_runtime "${HOME}/.biglybt/java.vmoptions"
@@ -37,6 +37,6 @@ patch_java_runtime "/opt/biglybt/java.vmoptions"
 
 # Install extra plugins
 cd plugins
-( mkdir xmwebui; cd xmwebui; unzip /app/plugins/xmwebui_1.0.9.zip )
-( mkdir aznettor; cd aznettor; unzip /app/plugins/aznettor-linux_1.2.8.zip )
-( mkdir azneti2phelper; cd azneti2phelper; unzip /app/plugins/azneti2phelper-linux_2.0.0.2.2.zip )
+( mkdir xmwebui; cd xmwebui; unzip /app/plugins/xmwebui_1.0.9.biglybt )
+( mkdir aznettor; cd aznettor; unzip /app/plugins/aznettor-linux_1.3.7.biglybt )
+( mkdir azneti2phelper; cd azneti2phelper; unzip /app/plugins/azneti2phelper-linux_2.7.0.1.1.biglybt )
