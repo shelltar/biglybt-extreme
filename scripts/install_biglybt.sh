@@ -41,7 +41,7 @@ if [ -x /app/BiglyBT_Installer.sh ]; then
   echo "Installing /app/BiglyBT_Installer.sh ..."
   cp -v /app/BiglyBT_Installer.sh ${BBTINSTSCR}
 else
-  wget https://files.biglybt.com/installer/BiglyBT_Installer.sh -O ${BBTINSTSCR}
+  wget https://github.com/BiglySoftware/BiglyBT/releases/download/v3.8.0.2/GitHub_BiglyBT_Installer.sh -O ${BBTINSTSCR}
   chmod +x ${BBTINSTSCR}
 fi
 
